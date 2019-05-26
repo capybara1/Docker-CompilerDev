@@ -34,7 +34,8 @@ RUN set -x; \
  && cmake --build . --target install \
  && cd / \
  && rm -rf $OBJ_DIR \
- && rm -rf $SRC_DIR
+ && rm -rf $SRC_DIR \
+ && rm /root/.wget-hsts
 WORKDIR /usr/local/lib
 RUN set -x; \
     cd /usr/local/lib \
