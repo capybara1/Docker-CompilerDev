@@ -19,6 +19,12 @@ RUN set -x; \
                     unzip \
                     python \
                     openjdk-${JAVA_VERSION}-jdk \
+                    nano \
+                    git \
+                    pkg-config \
+                    uuid-dev \
+ && git config --global user.email "john.doe@example.com" \
+ && git config --global user.name "John Doe" \
  && apt-get clean
 WORKDIR /opt
 RUN set -x; \
