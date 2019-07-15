@@ -62,7 +62,7 @@ RUN set -x; \
  && rm /tmp/antlr4-src.zip \
  && mkdir -p $OBJ_DIR \
  && cd $OBJ_DIR \
- && cmake -DCMAKE_BUILD_TYPE=Release $SRC_DIR \
+ && cmake -DCMAKE_BUILD_TYPE=Release -DANTLR4_INSTALL=True $SRC_DIR \
  && NUM_CORES=$(cat /proc/cpuinfo | grep processor -c) \
  && NUM_PARALLEL_JOBS=$(($NUM_CORES * 3 / 2)) \
  && cmake --build . --parallel $NUM_PARALLEL_JOBS \
