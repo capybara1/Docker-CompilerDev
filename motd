@@ -1,0 +1,11 @@
+Welcome to the CompilerDev docker image!
+
+This image provides LLVM 8 and ANTLR 4
+
+See <https://llvm.org/docs/CMake.html#embedding-llvm-in-your-project> in order to learn
+how to integrate LLVM into the build process using CMake
+                                    
+See <https://github.com/antlr/antlr4/blob/master/runtime/Cpp/cmake/Antlr4Package.md#the-antlr4-generator-package>
+in order to learn how to integrate ANTLR into the build process using CMake
+
+See <https://github.com/capybara1/CompilerDemo> for an example

@@ -7,6 +7,7 @@ ENV JAVA_VERSION 8
 ENV LLVM_VERSION 8
 ENV LLVM_REPO https://github.com/llvm/llvm-project
 ENV LLVM_BRANCH_ZIP "${LLVM_REPO}/archive/release/${LLVM_VERSION}.x.zip"
+COPY motd /etc/motd
 RUN set -x; \
     apt-get update \
  && apt-get install -y \
